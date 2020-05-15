@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-music Géneros</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="v-music" src="img/v-music.png" alt="v-music">
+
+        <a href="#" class="toggle-nav">
+            <span class="fa fa-bars"></span>
+        </a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="generos.html">Géneros</a></li>
+            </ul>
+        </nav>
+
+        <p class="menu2">
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </p>
+    </header>
+<br>
+    <div class="btn-group user-search">
+        <input class="form-control" placeholder="Search" aria-label="Search" value="">
+        <a class="form-input-cancel">
+            <svg class="svg-icon svg-icon-cancel" focusable="false" height="12" width="12" viewBox="0 0 12 12" aria-hidden="true">
+                <path d="M1.75 10.25l8.5-8.5m.002 8.505L1.75 1.75" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-width="1.5"></path>
+            </svg>
+        </a>
+    </div>
+    <div id="h2"><h2>Géneros</h2></div>
+    <p>Al cliquear un género, se podran ver algunos artistas que pertenecen a ese género</p>
+    <div id="products_generos">
+
+        <div onclick="document.getElementById('modal_dalex').style.display='block'">
+            <div class="product">
+                <img class="img" src="img/clasica.jpeg" alt="clásica">
+            </div>
+            <h4>Clásica</h4>
+        </div>
+        <!-- Modal Clasica -->
+        <div id="modal_dalex" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_dalex').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Clasica</h1>
+                 <ul>
+                     <li>Wolfgang Amadeus Mozart</li>
+                     <li>Johann Sebastian Bach</li>
+                     <li>Ludwig Van Beethoven</li>
+                     <li>Johannes Brahms</li>
+                     <li>Schubert</li>
+                 </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div onclick="document.getElementById('modal_nicki').style.display='block'">
+            <div class="product">
+                <img src="img/blues.jpeg" alt="Blues">
+            </div>
+            <h4>Blues</h4>
+        </div>
+        <!-- Modal Blues -->
+        <div id="modal_nicki" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_nicki').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Blues</h1>
+                    <ul>
+                        <li>Tom Waits</li>
+                        <li>Eric Clapton</li>
+                        <li>Jimi Hendrix</li>
+                        <li>B.B King</li>
+                        <li>The rolling stones</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div onclick="document.getElementById('modal_weekend').style.display='block'">
+            <div class="product">
+                <img src="img/jazz-final.jpeg" alt="Jazz">
+            </div>
+            <h4>Jazz</h4>
+        </div>
+        <!-- Modal jazz -->
+        <div id="modal_weekend" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_weekend').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Jazz</h1>
+                   <ul>
+                       <li>Miles Davis</li>
+                       <li>John Coltrane</li>
+                       <li>Norah Jones</li>
+                       <li>Frank Sinatra</li>
+                       <li>Louis Armstrong</li>
+                   </ul>
+                   
+                </div>
+            </div>
+        </div>
+        <div onclick="document.getElementById('modal_ozuna').style.display='block'">
+            <div class="product">
+                <img src="img/rock.jpeg" alt="rock">
+            </div>
+            <h4>Rock</h4>
+        </div>
+        <!-- Modal Rock -->
+        <div id="modal_ozuna" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_ozuna').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Rock</h1>
+                 <ul>
+                     <li>Red Hot Chili Peppers</li>
+                     <li>The Beatles</li>
+                     <li>Muse</li>
+                     <li>Coldplay</li>
+                     <li>Pink Floyd</li>
+                 </ul>
+                </div>
+            </div>
+        </div>
+        <div onclick="document.getElementById('modal_bunny').style.display='block'">
+            <div class="product">
+                <img src="img/pop.jpeg" alt="pop">
+            </div>
+            <h4>Pop</h4>
+        </div>
+        <!-- Modal pop -->
+        <div id="modal_bunny" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_bunny').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title"> Pop</h1>
+                    <ul>
+                        <li>Michael Jackson</li>
+                        <li>Madonna</li>
+                        <li>Lady Gaga</li>
+                        <li>Katy Perry</li>
+                        <li>Rihanna</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div onclick="document.getElementById('modal_drake').style.display='block'">
+            <div class="product">
+                <img src="img/gospel.jpeg" alt="gospel">
+            </div>
+            <h4>Christian music</h4>
+        </div>
+        <!-- Modal gospel -->
+        <div id="modal_drake" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_drake').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Christian music</h1>
+                   <ul>
+                       <li>Danilo Montero</li>
+                       <li>Alex Campos</li>
+                       <li>Marcos Witt</li>
+                       <li>Rojo</li>
+                       <li>Jesús Adrián Romero</li>
+                   </ul>
+            </div>
+        </div>
+        </div>
+    
+        <div onclick="document.getElementById('modal_balvin').style.display='block'">
+            <div class="product">
+                <img class="img" src="img/metal.jpeg" alt="metal">
+            </div>
+            <h4>Metal</h4>
+        </div>
+        <!-- Modal metal -->
+        <div id="modal_balvin" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_balvin').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Metal</h1>
+                    <ul>
+                        <li>Led Zeppelin</li>
+                        <li>AC/DC</li>
+                        <li>Kiss</li>
+                        <li>Guns n' Roses</li>
+                        <li>Queen</li>
+                    </ul>
+                  
+                    
+                </div>
+            </div>
+        </div>
+        <div onclick="document.getElementById('modal_maroon').style.display='block'">
+            <div class="product">
+                <img src="img/reggae.jpeg" alt="reggae">
+            </div>
+            <h4>Reggae</h4>
+
+        </div>
+        <!-- Modal reggae -->
+        <div id="modal_maroon" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_maroon').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Reggae</h1>
+                 <ul>
+                     <li>Bob Marley</li>
+                     <li>Matisyahu</li>
+                     <li>Manu Chao</li>
+                     <li>Gentleman</li>
+                     <li>Sublime</li>
+                 </ul>
+                   
+                </div>
+            </div>
+        </div>
+        <div onclick="document.getElementById('modal_jackson').style.display='block'">
+            <div class="product">
+                <img src="img/latin.jpeg" alt="Latin music">
+            </div>
+            <h4>Latin music</h4>
+        </div>
+        <!-- latin music -->
+        <div id="modal_jackson" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_jackson').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Latin music</h1>
+                  <ul>
+                      <li>Daddy Yankee</li>
+                      <li>Luis Fonsi</li>
+                      <li>Enrique Iglesias</li>
+                      <li>Malula</li>
+                      <li>Shakira</li>
+                      <li>Romeo Santos</li>
+                  </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div onclick="document.getElementById('modal_queen').style.display='block'">
+            <div class="product">
+                <img src="img/rb.jpeg" alt="R&B">
+            </div>
+            <h4>R&B</h4>
+        </div>
+        <!-- Modal R&B -->
+        <div id="modal_queen" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_queen').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">R&B</h1>
+                    <ul>
+                        <li>Beyoncé</li>
+                        <li>Alicia Keys</li>
+                        <li>Chris Brown</li>
+                        <li>Michael Jackson</li>
+                    </ul>
+                    
+                   
+                </div>
+            </div>
+        </div>
+        <div onclick="document.getElementById('modal_rollingstones').style.display='block'">
+            <div class="product">
+                <img src="img/salsa.png" alt="Salsa">
+            </div>
+            <h4>Salsa</h4>
+        </div>
+        <!-- Modal salsa -->
+        <div id="modal_rollingstones" class="modal">
+            <div class="modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal_rollingstones').style.display='none'"
+                        class="modal-button display-topright">&times;</span>
+                    <h1 class="modal-title">Salsa</h1>
+                   <ul>
+                       <li>Héctor Lavoe</li>
+                       <li>Willie Colón</li>
+                       <li>Celia Ruiz</li>
+                       <li>Frankie Ruiz</li>
+                   </ul>
+                   
+                </div>
+            </div>
+        </div>
+    
+
+        <div onclick="document.getElementById('modal_dalex').style.display='block'">
+        <div class="product">
+            <img class="img" src="img/reggaeton.png" alt="reggaeton">
+        </div>
+        <h4>Reggaeton</h4>
+        </div>
+        <!-- Modal reggaeton -->
+        <div id="modal_dalex" class="modal">
+        <div class="modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal_dalex').style.display='none'"
+                    class="modal-button display-topright">&times;</span>
+                <h1 class="modal-title">Reggaeton</h1>
+                <ul>
+                    <li>Daddy Yankee</li>
+                    <li>J Balvin</li>
+                    <li>Nicky Jam</li>
+                    <li>Ozuna</li>
+                    <li>Maluma</li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+        </div>
+    
+    
+        <div onclick="document.getElementById('modal_nicki').style.display='block'">
+        <div class="product">
+            <img src="img/funk.jpeg" alt="Funk">
+        </div>
+        <h4>Funk</h4>
+        </div>
+        <!-- Modal funk -->
+        <div id="modal_nicki" class="modal">
+        <div class="modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal_nicki').style.display='none'"
+                    class="modal-button display-topright">&times;</span>
+                <h1 class="modal-title">Funk</h1>
+               <ul>
+                   <li>James Brown</li>
+                   <li>Doja Cat</li>
+                   <li>Prince</li>
+                   <li>George Clinton</li>
+                   <li>Stevie Wonder</li>
+               </ul>
+            </div>
+        </div>
+        </div>
+        <div onclick="document.getElementById('modal_weekend').style.display='block'">
+        <div class="product">
+            <img src="img/rap.jpeg" alt="rap">
+        </div>
+        <h4>Rap</h4>
+        </div>
+        <!-- Modal rap -->
+        <div id="modal_weekend" class="modal">
+        <div class="modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal_weekend').style.display='none'"
+                    class="modal-button display-topright">&times;</span>
+                <h1 class="modal-title">Rap</h1>
+                <ul>
+                    <li>Drake</li>
+                    <li>Nicki Minaj</li>
+                    <li>Eminem</li>
+                    <li>Yung blud</li>
+                    <li>Jay Z</li>
+                </ul>
+               
+            </div>
+        </div>
+        </div>
+        <div onclick="document.getElementById('modal_ozuna').style.display='block'">
+        <div class="product">
+            <img src="img/folk.jpeg" alt="Folk">
+        </div>
+        <h4>Folk</h4>
+        </div>
+        <!-- Modal folk-->
+        <div id="modal_ozuna" class="modal">
+        <div class="modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal_ozuna').style.display='none'"
+                    class="modal-button display-topright">&times;</span>
+                <h1 class="modal-title">Folk</h1>
+               <ul>
+                   <li>Bob Dylan</li>
+                   <li>Bob Dylan</li>
+                   <li>Bon Iver</li>
+                   <li>Fleet Foxes</li>
+                   <li>Paul Simon</li>
+               </ul>
+            </div>
+        </div>
+        </div>
+        <div onclick="document.getElementById('modal_bunny').style.display='block'">
+        <div class="product">
+            <img src="img/soul.jpeg" alt="Soul">
+        </div>
+        <h4>Soul</h4>
+        </div>
+        <!-- Modal soul -->
+        <div id="modal_bunny" class="modal">
+        <div class="modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal_bunny').style.display='none'"
+                    class="modal-button display-topright">&times;</span>
+                <h1 class="modal-title"> Soul</h1>
+               <ul>
+                   <li>James Brown</li>
+                   <li>Alicia Keys</li>
+                   <li>Whitney Houston</li>
+                   <li>Michael Jackson</li>
+                   <li>Bruno Mars</li>
+               </ul>
+                
+            </div>
+        </div>
+        </div>
+        <div onclick="document.getElementById('modal_drake').style.display='block'">
+        <div class="product">
+            <img src="img/techno.jpeg" alt="Elecntrónica">
+        </div>
+        <h4>Electrónica</h4>
+        </div>
+        <!-- Modal electronica -->
+        <div id="modal_drake" class="modal">
+        <div class="modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal_drake').style.display='none'"
+                    class="modal-button display-topright">&times;</span>
+                <h1 class="modal-title">Electrónica</h1>
+                <ul>
+                    <li>David Guetta</li>
+                    <li>Daft Punk</li>
+                    <li>Avicii</li>
+                    <li>Twenty one pilots</li>
+                </ul>
+               
+        </div>
+        </div>
+       </div>
+       <div onclick="document.getElementById('modal_balvin').style.display='block'">
+        <div class="product">
+            <img class="img" src="img/indie-final.jpeg" alt="indie">
+        </div>
+        <h4>Indie</h4>
+        </div>
+        <!-- Modal indie -->
+        <div id="modal_balvin" class="modal">
+        <div class="modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal_balvin').style.display='none'"
+                    class="modal-button display-topright">&times;</span>
+                <h1 class="modal-title">Indie</h1>
+               <ul>
+                   <li>The strokes</li>
+                   <li>Artic Monkeys</li>
+                   <li>The killers</li>
+                   <li>Radiohead</li>
+                   <li>Twetny one pilots</li>
+               </ul>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    
+    <br><br><br><br><br>
+    <footer>
+        <img class="deezer" src="img/deezer.jpeg" alt="deezer">
+        <p>Hecho por: Derek Smith Estrada, Belén Vincent y Álvaro Burzaco</p>
+    </footer>
+
+</body>
+</html>

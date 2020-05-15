@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-music Géneros</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="v-music" src="img/v-music.png" alt="v-music">
+    
+            <a href="#" class="toggle-nav">
+                <span class="fa fa-bars"></span>
+            </a>
+    
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="generos.html">Géneros</a></li>
+                </ul>
+            </nav>
+    
+            <p class="menu2">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+            </p>
+    </header>
+    <body>
+        <div id="h2"><h2>Tracks</h2></div>
+        <p>Al cliquear una cancion, se podrán ver sus características generales</p>
+        <div id="products_tracks">
+            <div onclick="document.getElementById('modal_dalex').style.display='block'">
+                <div class="product">
+                    <img class="img" src="img/dalex.jpeg" alt="Dalex">
+                </div>
+                <h4>Dalex</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Dalex -->
+            <div id="modal_dalex" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_dalex').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Mejor</h1>
+                        <p>Caracteristicas generales</p>
+                     <ol>
+                         <li>Artista: Dalex</li>
+                         <li>Album: Mejor</li>
+                         <li>Fecha de lanzamiento: 2020</li>
+                         <button type="submit" class="search_submit"> Add to playlist </button>
+                     </ol>
+                    </div>
+                </div>
+            </div>
+            
+            
+        <div onclick="document.getElementById('modal_nicki').style.display='block'">
+                <div class="product">
+                    <img src="img/minaj.jpeg" alt="Nicki Minaj">
+                </div>
+                <h4>Nicki Minaj</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+    
+            <!-- Modal Nicki -->
+            <div id="modal_nicki" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_nicki').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Super Bass</h1>
+                        <p>Caracteristicas generales</p>
+                        <ol>
+                            <li>Artista: Nicki Minaj</li>
+                            <li>Album: Pink Friday</li>
+                            <li>Fecha de lanzamiento:2011</li>
+                            <button type="submit" class="search_submit"> Add to playlist </button>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div onclick="document.getElementById('modal_weekend').style.display='block'">
+                <div class="product">
+                    <img src="img/weekend.jpeg" alt="The Weekend">
+                </div>
+                <h4>The Weekend</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Weekend -->
+            <div id="modal_weekend" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_weekend').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">High for this</h1>
+                        <p>Caracteristicas generales</p>
+                        <ol>
+                            <li>Artista: The weekend</li>
+                            <li>Album: V</li>
+                            <li>Fecha de lanzamiento:2014</li>
+                            <button type="submit" class="search_submit"> Add to playlist </button>
+                        </ol>
+                       
+                    </div>
+                </div>
+            </div>
+            <div onclick="document.getElementById('modal_ozuna').style.display='block'">
+                <div class="product">
+                    <img src="img/ozun.jpeg" alt="Ozuna">
+                </div>
+                <h4>Ozuna</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Ozuna -->
+            <div id="modal_ozuna" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_ozuna').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Se preparó</h1>
+                        <p>Caracteristicas generales</p>
+                        <ol>
+                            <li>Artista: Ozuna</li>
+                            <li>Album: Se preparó</li>
+                            <li>Fecha de lanzamiento:2017</li>
+                            <button type="submit" class="search_submit"> Add to playlist </button>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div onclick="document.getElementById('modal_bunny').style.display='block'">
+                <div class="product">
+                    <img src="img/badbunny.jpeg" alt="Bad Bunny">
+                </div>
+                <h4>Bad Bunny</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Bunny -->
+            <div id="modal_bunny" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_bunny').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title"> Soy peor</h1>
+                        <p>Caracteristicas generales</p>
+                        <ol>
+                            <li>Artista: Bad Bunny</li>
+                            <li>Album: Soy peor</li>
+                            <li>Fecha de lanzamiento:2016</li>
+                            <button type="submit" class="search_submit"> Add to playlist </button>
+                        </ol>
+                        
+                    </div>
+                </div>
+            </div>
+            <div onclick="document.getElementById('modal_drake').style.display='block'">
+                <div class="product">
+                    <img src="img/drake.jpeg" alt="Drake">
+                </div>
+                <h4>Drake</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Drake -->
+            <div id="modal_drake" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_drake').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">God's plan</h1> 
+                        <p>Caracteristicas generales</p>
+                       <ol>
+                           <li>Artista: Drake</li>
+                           <li>Album: God's plan</li>
+                           <li>Fecha de lanzamiento:2018</li>
+                           <button type="submit" class="search_submit"> Add to playlist </button>
+                       </ol>
+                       
+                </div>
+            </div>
+        </div>
+        <div id="products">
+            <div onclick="document.getElementById('modal_balvin').style.display='block'">
+                <div class="product">
+                    <img class="img" src="img/jbalvin.jpeg" alt="J Balvin">
+                </div>
+                <h4>J Balvin</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Balvin -->
+            <div id="modal_balvin" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_balvin').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Ay vamos</h1>
+                        <p>Caracteristicas generales:</p>
+                        <ol>
+                            <li>Artista: J Balvin</li>
+                            <li>Album: La familia B sides</li>
+                            <li>Fecha de lanzamiento: 2014</li>
+                            <li>Género: Reggeaton</li>
+                            <button type="submit" class="search_submit"> Add to playlist </button>
+                        </ol>
+                        
+                    </div>
+                </div>
+            </div>
+            <div onclick="document.getElementById('modal_maroon').style.display='block'">
+                <div class="product">
+                    <img src="img/maroon.jpeg" alt="Maroon 5">
+                </div>
+                <h4>Maroon 5</h4><button type="submit" class="search_submit"> Add to playlist </button>
+    
+            </div>
+            <!-- Modal Maroon -->
+            <div id="modal_maroon" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_maroon').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Sugar</h1>
+                        <p>Caracteristicas generales</p>
+                        <ol>
+                            <li>Artista: Maroon 5</li>
+                            <li>Album: V</li>
+                            <li>Fecha de lanzamiento:2014</li>
+                            <button type="submit" class="search_submit"> Add to playlist </button>
+                        </ol>
+                       
+                    </div>
+                </div>
+            </div>
+            <div onclick="document.getElementById('modal_jackson').style.display='block'">
+                <div class="product">
+                    <img src="img/michaeljackson.jpeg" alt="Michael Jackson">
+                </div>
+                <h4>Michael Jackson</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Jackson -->
+            <div id="modal_jackson" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_jackson').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Billie Jean</h1>
+                        <p>Caracteristicas generales</p>
+                       <ol>
+                           <li>Artista: Michael Jackson</li>
+                           <li>Album: Thriller</li>
+                           <li>Fecha de lanzamiento:1982</li>
+                           <button type="submit" class="search_submit"> Add to playlist </button>
+                       </ol>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div onclick="document.getElementById('modal_queen').style.display='block'">
+                <div class="product">
+                    <img src="img/queen-final.png" alt="Queen">
+                </div>
+                <h4>Queen</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Queen -->
+            <div id="modal_queen" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_queen').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Bohemian Rhapsody</h1>
+                        <p>Caracteristicas generales</p>
+                       <ol>
+                           <li>Artista: Queen</li>
+                           <li>Album: Bohemian Rhapsody</li>
+                           <li>Fecha de lanzamiento:1975</li>
+                           <button type="submit" class="search_submit"> Add to playlist </button>
+                       </ol>
+                       
+                    </div>
+                </div>
+            </div>
+            <div onclick="document.getElementById('modal_rollingstones').style.display='block'">
+                <div class="product">
+                    <img src="img/rollingstones.jpeg" alt="Rolling Stones">
+                </div>
+                <h4>Rolling Stones</h4><button type="submit" class="search_submit"> Add to playlist </button>
+            </div>
+            <!-- Modal Rollingstones -->
+            <div id="modal_rollingstones" class="modal">
+                <div class="modal-content">
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('modal_rollingstones').style.display='none'"
+                            class="modal-button display-topright">&times;</span>
+                        <h1 class="modal-title">Start me up</h1>
+                        <p>Caracteristicas generales</p>
+                        <ol>
+                            <li>Artista: The Rolling stones</li>
+                            <li>Album: Tattoo you</li>
+                            <li>Fecha de lanzamiento:1981</li>
+                            <button type="submit" class="search_submit"> Add to playlist </button>
+                        </ol>
+                       
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    
+    <footer>
+        <img class="deezer" src="img/deezer.jpeg" alt="deezer">
+        <p>Hecho por: Derek Smith Estrada, Belén Vincent y Álvaro Burzaco</p>
+    </footer>
+    
+    </body>
+    </html>
