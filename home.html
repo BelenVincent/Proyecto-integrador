@@ -15,6 +15,7 @@
 
 </head>
 <body>
+  
     <header>
         <img class="v-music" src="img/v-music.png" alt="v-music">
 
@@ -27,24 +28,23 @@
                 <li><a href="home.html">home</a></li>
                 <li><a href="login.html">login</a></li>
                 <li><a href="generos.html">Géneros</a></li>
+                <li> <a href="detalle.html">Detalles</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
             </ul>
         </nav>
 
-        <p class="menu2">
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
-        </p>
+       
         
         
 
     </header>
-    
+    <div class="contenedor">
 <br><br>
     <form action="results.html" method="GET">
         <input type="text" class="search_input" name="q" placeholder="EXAMPLE: Queen">
         <button type="submit" class="search_submit"> search </button>
     </form>
+  
     <br>
 
     <div id="home">
@@ -77,112 +77,48 @@
         </a>
       </div>
       
-      
+      </div>
 
 <div id="home_album">
     <div id="h2"><a href="album.html"> <h2>Albums</h2></a></div>
-    <div id="products">
-        <div class="playlists">
-            <img class="img" src="img/nibiru.jpeg" alt="nibiru">
-            <h4>Nibiru</h4>
-        </div>
-        <div class="playlists">
-            <img src="img/after.jpeg" alt="After hours">
-            <h4>After hours</h4>
+    <div id="albums" class="products">
 
-        </div>
-        <div class="playlists">
-                <img src="img/yyy.jpeg" alt="YHLQMDLG">
-            <h4>YHLQMDLG</h4>
-        </div>
-
-        <div class="playlists">
-            <img src="img/queen.jpeg" alt="Queen">
-            <h4>Queen</h4>
-        </div>
-        <div class="playlists">
-            <img src="img/climaxxx.jpeg" alt="Climaxxx">
-            <h4>Climaxxx</h4>
-        </div>
-        <div class="playlists">
-            <img src="img/care.jpeg" alt="Care package">
-            <h4>Care Package</h4>
-        </div>
+    
+        
+        
     </div>
     </div>
     <br>
 
     <div id="h2"><a href="artistas.html"><h2>Artistas</h2></a></div>
-    <div id="products">
-        <div class="product">
-            <img class="img" src="img/drake.jpeg" alt="Drake">
-            <h4>Drake</h4>
-        </div>
-        <div class="product">
-            <img src="img/rosalia-final.jpeg" alt="Rosalía">
-            <h4>Rosalía</h4>
-
-        </div>
-        <div class="product">
-                <img src="img/queen-final.png" alt="Queen">
-            <h4>Queen</h4>
-        </div>
-
-        <div class="product">
-            <img src="img/michaeljackson.jpeg" alt="Michael Jackson">
-            <h4>Michael Jackson</h4>
-        </div>
-        <div class="product">
-            <img src="img/rollingstones.jpeg" alt="Rolling Stones">
-            <h4>Rolling Stones</h4>
-        </div>
-        <div class="product">
-            <img src="img/guns.jpeg" alt="Guns n' Roses">
-            <h4>Guns n' Roses</h4>
-        </div>
+    <div id="artistas" class="products">
+        
     </div>
-    <br><br>
+    <br><br><br><br>
 
     <div id="h2">
         <a href="tracks.html">
             <h2>Tracks</h2></div>
         </a>
 
-    <div id="products">
-        <div class="product">
-            <img class="img" src="img/badbunny.jpeg" alt="Badbunny">
-            <h4>Bad Bunny</h4>
-        </div>
-        <div class="product">
-            <img src="img/billie.jpeg" alt="Billie">
-            <h4>Billie Eilish</h4>
-
-        </div>
-        <div class="product">
-            <img src="img/drake.jpeg" alt="Drake">
-            <h4>Drake</h4>
-        </div>
-
-        <div class="product">
-            <img src="img/jbalvin.jpeg" alt="J Balvin">
-            <h4>J Balvin</h4>
-        </div>
-        <div class="product">
-            <img src="img/karolg.jpeg" alt="Karol G">
-            <h4>Karol G</h4>
-        </div>
-        <div class="product">
-            <img src="img/lipa.jpeg" alt="Dua Lipa">
-            <h4>Dua Lipa</h4>
-        </div>
-    </div>
-    </div>
+    <div id="tracks" ></div>
+        
+        
+    
+    
     <br><br><br><br><br><br>
     <footer>
+        <p class="menu2">
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </p>
         <img class="deezer" src="img/deezer.jpeg" alt="deezer">
         <p>Hecho por: Derek Smith Estrada, Belén Vincent y Álvaro Burzaco</p>
     </footer>
-
+  </div>
+      <script src="js/home.js"></script>
+   
 
 </body>
 </html>
