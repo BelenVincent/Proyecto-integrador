@@ -17,7 +17,7 @@
 <body>
   
     <header>
-        <img class="v-music" src="img/v-music.png" alt="v-music">
+        <a href="home.html"><img class="v-music" src="img/v-music.png" alt="v-music"></a>
 
         <a href="#" class="toggle-nav">
             <span class="fa fa-bars"></span>
@@ -25,11 +25,9 @@
 
         <nav class="main-nav">
             <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="login.html">login</a></li>
                 <li><a href="generos.html">Géneros</a></li>
-                <li> <a href="detalle.html">Detalles</a></li>
                 <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="login.html">Log in</a></li>
             </ul>
         </nav>
 
@@ -40,10 +38,15 @@
     </header>
     <div class="contenedor">
 <br><br>
-    <form action="results.html" method="GET">
-        <input type="text" class="search_input" name="q" placeholder="EXAMPLE: Queen">
-        <button type="submit" class="search_submit"> search </button>
-    </form>
+<form action="tracks.html" method="GET" class="forms">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text"><i class="fas fa-search"></i></div>
+    </div>
+    <input type="text" class="form-control" placeholder="Buscar" name="busqueda">
+    <button type="submit">Buscar</button>
+  </div>
+</form>
   
     <br>
 

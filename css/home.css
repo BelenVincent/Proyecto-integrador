@@ -1,14 +1,14 @@
 header{
-    background-color: rgb(26, 90, 26);
+    background-color: rgb(130, 75, 151);
     width: 100%;
-    height: 250px;
+    height: 180px;
     font-size: larger;
     z-index: 10;
     font-family: 'Overpass', sans-serif;
 }
 
 footer{
-    background-color: steelblue;
+    background-color: black;
     width: 100%;
     height: 150px;
     font-size: larger;
@@ -33,7 +33,7 @@ li{
     position: fixed;
     left: 0;
     top: 0;
-    text-align:center;
+    text-align: center;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -41,7 +41,7 @@ li{
 }
 .modal-content{
     margin:  auto;
-    background-color:steelblue;
+    background-color:white;
     position: relative;
     padding: 0;
     outline: 0;
@@ -88,6 +88,23 @@ header ul li a{
     margin-block-start: auto;
     font-size: larger;
     font-family: 'Overpass', sans-serif;
+    text-align: center;
+    column-gap: 30px;
+    margin-left: 20px;
+    color: black;
+}
+
+.main-nav{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+.main-nav li{
+     color: white;}
+
+a:hover{
+    background-color: rgba(130, 75, 151, 0.5);
 }
 
 .products{
@@ -160,7 +177,7 @@ body{
 }
 
 h2{
-    color: steelblue;
+    color: white;
 }
 
 .v-music{
@@ -172,17 +189,8 @@ h2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-}
-
-.main-nav{
-    text-transform: uppercase;
-    margin-bottom: 10px;
     margin-top: 10px;
-    
-}
-.main-nav li{
-     color: white;
+
 }
 
 .playlists img{
@@ -226,9 +234,10 @@ p{
     text-align: center;
 }
 
-a:hover{
-    background-color: rgba(255, 255, 255, 0.5);
+.toggle-nav{
+    display: none;
 }
+
 
 @media (max-width: 768px){
 
@@ -239,6 +248,10 @@ a:hover{
 
     footer{width: 100%;}
     
+    .toggle-nav{
+        display: contents;
+    }
+
     .search_input{
         width: 50%;
     }
