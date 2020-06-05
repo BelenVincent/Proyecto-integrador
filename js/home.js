@@ -32,7 +32,7 @@ fetch (' https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
     let cancionesContenedor = document.querySelector ('#tracks');
     canciones.forEach(function(dataCancion){
         cancionesContenedor.innerHTML += `<div >
-        <h4>${dataCancion.title} </h4>
+        <a href="detalle_tracks.html?id=${dataCancion.id}"><h4>${dataCancion.title} </h4></a>
         <audio src="${dataCancion.preview} " controls></audio>
     </div>`
     });
