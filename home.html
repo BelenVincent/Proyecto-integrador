@@ -40,9 +40,14 @@
     </header>
     <div class="contenedor">
 <br><br>
-    <form action="results.html" method="GET">
-        <input type="text" class="search_input" name="q" placeholder="EXAMPLE: Queen">
-        <button type="submit" class="search_submit"> search </button>
+    <form action="results.html" method="GET" class="forms">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-search"></i></div>
+        </div>
+        <input type="text" class="form-control" placeholder="Buscar" name="busqueda">
+        <button type="submit">Buscar</button>
+      </div>
     </form>
   
     <br>
