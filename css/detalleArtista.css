@@ -24,7 +24,8 @@ header{
 }
 
 .imagen-artista{
-    margin-left: 550px;
+    margin: 0 auto;
+    display: block;
    
 }
 

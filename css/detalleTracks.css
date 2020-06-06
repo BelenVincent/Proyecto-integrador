@@ -25,7 +25,8 @@ header{
 }
 
 .imagen-track{
-    margin-left: 550px;
+    margin: 0 auto;
+    display: block;
    
 }
 

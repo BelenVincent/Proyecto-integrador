@@ -36,10 +36,6 @@ footer{
     
 }
 
-.carousel-slide{
-    margin-left: 50px;
-}
-
 .tracks{
     margin-top: 100px;
 }
@@ -47,6 +43,7 @@ footer{
 li{
     list-style-type: none;
 }
+
 /* Modal */
 .modal{
     z-index: 3;
@@ -129,8 +126,8 @@ header ul li a{
 }
 
 .imagen-album{
-    margin-left: 550px;
-   
+    margin: 0 auto;
+   display: block;
 }
   
 

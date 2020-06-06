@@ -9,7 +9,7 @@ fetch (' https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/')
 
     let generosContenedor = document.querySelector ('#products_generos')
     generos.forEach (function(dataGeneros){
-        generosContenedor.innerHTML += ` <div>
+        generosContenedor.innerHTML += ` <div class="generoscontenedor">
         <a href="detallesGeneros.html?id=${dataGeneros.id}">
         <div class="product" >
         <img class="img" src="${dataGeneros.picture_medium}" alt="clásica">
