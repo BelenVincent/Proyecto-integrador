@@ -22,7 +22,8 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackI
         imagen.src = datos.album.cover_medium;
         let nombreTrack = document.querySelector('.nombre-track');
         nombreTrack.innerHTML = `<a href="detallesArtista.html?=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>`
-
+        let duracionCancion = document.querySelector('.duracion')
+        duracionCancion.innerHTML= datos.duration
     })
     .catch(function(error){
         console.error(error);

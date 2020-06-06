@@ -21,6 +21,8 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/' + albu
         let imagen = document.querySelector('.imagen-album');
         imagen.src = datos.cover_medium;
 
+        let fecha = document.querySelector('.fecha')
+       fecha.innerHTML= datos.release_date;
 
 
     })

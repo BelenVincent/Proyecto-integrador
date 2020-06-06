@@ -4,50 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V-music Géneros</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/generos.css">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="v-music" src="img/v-music.png" alt="v-music">
+       <a href="home.html"> <img class="v-music" src="img/v-music.png" alt="v-music"> </a>
 
         <a href="#" class="toggle-nav">
             <span class="fa fa-bars"></span>
         </a>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="generos.html">Géneros</a></li>
-                <li> <a href="detalle.html">Detalles</a></li>
-                <li><a href="playlist.html">Playlist</a></li>
-            </ul>
-        </nav>
 
        
     </header>
-<br>
-    <div class="btn-group user-search">
-        <input class="form-control" placeholder="Search" aria-label="Search" value="">
-        <a class="form-input-cancel">
-            <svg class="svg-icon svg-icon-cancel" focusable="false" height="12" width="12" viewBox="0 0 12 12" aria-hidden="true">
-                <path d="M1.75 10.25l8.5-8.5m.002 8.505L1.75 1.75" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-width="1.5"></path>
-            </svg>
-        </a>
-    </div>
-    <div id="h2"><h2>Géneros</h2></div>
-    <p>Al cliquear un género, se podran ver algunos artistas que pertenecen a ese género</p>
-    <div id="products_generos">
 
+    <div id="h2"><h2>Géneros</h2></div>
+
+    <form action="tracks.html" method="GET" class="forms">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-search"></i></div>
+          </div>
+          <input type="text" class="form-control" placeholder="Buscar" name="busqueda">
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+  
+
+
+    
+    <div id="products_generos">
+ 
         
           
     </div>
 
     
     
-    <br><br><br><br><br>
+   
     <footer>
         <p class="menu2">
             <i class="fab fa-twitter-square"></i>
@@ -55,7 +51,7 @@
             <i class="fab fa-instagram-square"></i>
         </p>
         <img class="deezer" src="img/deezer.jpeg" alt="deezer">
-        <p>Hecho por: Derek Smith Estrada, Belén Vincent y Álvaro Burzaco</p>
+        <p> Derek Smith Estrada, Belén Vincent y Alvaro Burzaco</p>
     </footer>
 <script src="js/generos.js"></script>
 

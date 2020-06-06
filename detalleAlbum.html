@@ -5,40 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/detalleAlbum.css">
     <title>Detalle</title>
 
 </head>
 <body>
+
+    
     <header>
-        <img class="v-music" src="img/v-music.png" alt="v-music">
+        <a href="home.html"><img class="v-music" src="img/v-music.png" alt="v-music"></a>
 
         <a href="#" class="toggle-nav">
             <span class="fa fa-bars"></span>
         </a>
 
+        
         <nav class="main-nav">
-            <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="login.html">login</a></li>
+            <ul >
                 <li><a href="generos.html">Géneros</a></li>
                 <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="login.html">Log in</a></li>
             </ul>
         </nav>
-
+    
     </header>
-    <br><br>
-    <form action="results.html" method="GET">
-        <input type="text" class="search_input" name="q" placeholder="EXAMPLE: Queen">
-        <button type="submit" class="search_submit"> search </button>
-    </form>
-    <br>
+
+   
+    <div class="detalleAlbum">
+    
 
     <h1 class="titulo-album">Titulo del Album</h1>
 
     <img src=""  alt="Imagen de Album" class="imagen-album">
+     <h3 class="b">Fecha de lanzamiento del album:</h3>
+    <h2 class="fecha">Fecha de lanzamiento</h2>
 
-<br><br><br><br><br><br><br><br>
+</div>
+
     <footer>
         <p class="menu2">
             <i class="fab fa-twitter-square"></i>
@@ -46,8 +49,9 @@
             <i class="fab fa-instagram-square"></i>
         </p>
         <img class="deezer" src="img/deezer.jpeg" alt="deezer">
-        <p>Hecho por: Derek Smith Estrada, Belén Vincent y Álvaro Burzaco</p>
+        <p>Derek Smith Estrada, Belén Vincent y Álvaro Burzaco</p>
     </footer>
+
    
     <script src="js/detalles.Album.js"></script>
 </body>

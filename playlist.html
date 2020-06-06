@@ -5,44 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/playlist.css">
     <title>Playlist</title>
 
 </head>
 <body>
     <header>
-        <img class="v-music" src="img/v-music.png" alt="v-music">
+       <a href="home.html"> <img class="v-music" src="img/v-music.png" alt="v-music"> </a>
 
         <a href="#" class="toggle-nav">
             <span class="fa fa-bars"></span>
         </a>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="generos.html">Géneros</a></li>
-            </ul>
-        </nav>
+        
 
     </header>
-    <br><br>
-    <form action="results.html" method="GET">
-        <input type="text" class="search_input" name="q" placeholder="EXAMPLE: Queen">
-        <button type="submit" class="search_submit"> search </button>
-    </form>
-    <br>
 
-<br><br><br><br><br><br><br><br>
-    <footer>
-        <p class="menu2">
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
-        </p>
-        <img class="deezer" src="img/deezer.jpeg" alt="deezer">
-        <p>Hecho por: Derek Smith Estrada, Belén Vincent y Álvaro Burzaco</p>
-    </footer>
+    <h1 class="playlists">Playlists</h1>
+    
+    <form action="tracks.html" method="GET" class="forms">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-search"></i></div>
+          </div>
+          <input type="text" class="form-control" placeholder="Buscar" name="busqueda">
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+  
+    
+
+
+<footer>
+    <p class="menu2">
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+    </p>
+    <img class="deezer" src="img/deezer.jpeg" alt="deezer">
+    <p> Derek Smith Estrada, Belén Vincent y Alvaro Burzaco</p>
+</footer>
    
 </body>
 </html>

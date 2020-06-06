@@ -13,7 +13,7 @@ fetch (' https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
         albumsContenedor.innerHTML += ` <div class="playlists">
         <a href="detalleAlbum.html?id=${dataAlbum.id} ">
         <img class="img" src="${dataAlbum.cover} " alt="nibiru">
-        <h4>${dataAlbum.title} </h4>
+        <h4 class="color">${dataAlbum.title} </h4>
         </a>
         </div>
         `
@@ -22,9 +22,10 @@ fetch (' https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
     let artistasContenedor = document.querySelector ('#artistas');
     artistas.forEach (function(dataArtist){
         artistasContenedor.innerHTML += `  <div class="product">
+        <a href="detallesArtista.html?id=${dataArtist.id}"> 
         <img class="img" src="${dataArtist.picture_medium} " alt="Drake">
-        <h4>${dataArtist.name} </h4>
-        <a href="detalleAlbum.html"></a>
+        <h4 class="color">${dataArtist.name} </h4>
+        </a>
         </div>
         `
     })
@@ -32,7 +33,7 @@ fetch (' https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
     let cancionesContenedor = document.querySelector ('#tracks');
     canciones.forEach(function(dataCancion){
         cancionesContenedor.innerHTML += `<div >
-        <a href="detalle_tracks.html?id=${dataCancion.id}"><h4>${dataCancion.title} </h4></a>
+        <a href="detalle_tracks.html?id=${dataCancion.id}"><h4 class="titulotrack">${dataCancion.title} </h4></a>
         <audio src="${dataCancion.preview} " controls></audio>
     </div>`
     });
