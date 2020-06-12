@@ -25,7 +25,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/' + albu
        fecha.innerHTML= datos.release_date;
 
        let nombreArtista = document.querySelector('.nombre-artista');
-       nombreArtista.innerHTML =  `<a href="detallesArtista.html?=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>`
+       nombreArtista.innerHTML =  `<a href="detallesArtista.html?id=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>`
 
 
 

@@ -20,8 +20,31 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/' + Gene
 
         let imagen = document.querySelector('.imagen-genero');
         imagen.src = datos.picture_medium;
+        
+        
 
+    })
+    .catch(function(error){
+        console.error(error);
+    })
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/'+GenerosId+'/artists')
+    .then(function(respuesta){
+        return respuesta.json();
+    })
+    .then(function(datos){
 
+       console.log (datos)
+
+        let contenedorartistas = document.querySelector('.contenedor-artistas');
+       let artistas = datos.data
+       for (const artista of artistas) {
+           contenedorartistas.innerHTML+=`
+           <div>
+         ${artista.name}
+           </div> 
+           `
+       }
+        
 
     })
     .catch(function(error){

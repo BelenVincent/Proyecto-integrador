@@ -29,7 +29,8 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackI
 
         let nombreAlbum = document.querySelector ('.nombre-album');
         nombreAlbum.innerHTML = datos.album.title;
-
+       let nombreArtista = document.querySelector ('.nombre-artista');
+       nombreArtista.innerHTML = `<a href="detallesArtista.html?id=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>`
     })
     .catch(function(error){
         console.error(error);

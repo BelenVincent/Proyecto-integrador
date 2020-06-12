@@ -28,3 +28,26 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+artis
     .catch(function(error){
         console.error(error);
     })
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+artistaId+'/top')
+    .then(function(respuesta){
+        return respuesta.json();
+    })
+    .then(function(datos){
+
+       console.log (datos)
+    let contenedorcanciones=document.querySelector('.contenedor-canciones');
+
+    let data=datos.data
+    for (const cancion of data) {
+        contenedorcanciones.innerHTML+=`
+        
+        <div>
+      ${cancion.title}
+        </div>  
+         `
+        
+    }
+    })
+    .catch(function(error){
+        console.error(error);
+    })
