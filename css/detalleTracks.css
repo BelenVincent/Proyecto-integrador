@@ -13,6 +13,10 @@ header{
     color: black;
 }
 
+.v-music:hover{
+    transform: scale(1.2);
+}
+
 .detalleTracks{
     display: grid;
     gap: 30px;

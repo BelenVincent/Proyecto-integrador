@@ -13,13 +13,16 @@ header{
     padding-top: 10px;
 }
 
+.v-music:hover{
+    transform: scale(1.2);
+}
+
 .resultados{
     height: 100%;
     
     gap: 50px;
     padding: 20px;
-    
-    
+
 }
 
 

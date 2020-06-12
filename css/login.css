@@ -9,6 +9,10 @@ header{
     
 }
 
+.v-music:hover{
+    transform: scale(1.2);
+}
+
 footer{
     background-color: black;
     width: 100%;

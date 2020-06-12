@@ -24,6 +24,10 @@ footer{
     color: black;
 }
 
+.v-music:hover{
+    transform: scale(1.2);
+}
+
 .titulo-album{
     margin-top: 50px;
 }

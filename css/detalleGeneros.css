@@ -45,6 +45,10 @@ footer{
     margin-top: 100px;
 }
 
+.v-music:hover{
+    transform: scale(1.2);
+}
+
 .titulo-genero{
     color: black;
     margin-top: 50px;
