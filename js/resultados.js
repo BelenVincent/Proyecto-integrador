@@ -21,13 +21,12 @@ fetch ('https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=' + 
          
         contenedorData.innerHTML += `
         <div>
-        <div>
+        <div class="resultados">
             <a href="detalle_tracks.html?id=${track.id}">
             <img src="${track.album.cover_medium} " alt="">
            </a>
            <a href="detalle_tracks.html?id=${track.id}">${track.title_short} </a>
            <a href="detallesArtista.html?id=${track.artist.id}">${track.artist.name} </a>
-           <div>Ranking:${track.name} </div>
         </div>
    </div>
         
