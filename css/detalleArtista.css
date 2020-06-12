@@ -23,6 +23,14 @@ header{
 
 }
 
+.numeros{
+    margin-top: 50px;
+}
+
+.topCanciones{
+    margin-left: 600px;
+}
+
 .imagen-artista{
     margin: 0 auto;
     display: block;

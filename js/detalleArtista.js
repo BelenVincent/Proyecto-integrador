@@ -16,13 +16,15 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+artis
        console.log (datos)
 
         let titulo = document.querySelector('.nombre-artista');
-        titulo.innerHTML = datos.name;
+        titulo.innerHTML = `<h5 class="numeros"> ${datos.name} </h5>`
 
         let imagen = document.querySelector('.imagen-artista');
-        imagen.src = datos.picture_medium;
+        imagen.src =  datos.picture_medium;
 
         let fans = document.querySelector('.fans')
-        fans.innerHTML = datos.nb_fan
+        fans.innerHTML = `<h5 class="numero">Número de fans:</h5>
+        <h4 class="fans"> ${datos.nb_fan} </h4>`
+       
         
     })
     .catch(function(error){
@@ -41,11 +43,16 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+artis
     for (const cancion of data) {
         contenedorcanciones.innerHTML+=`
         
-        <div>
-      ${cancion.title}
-        </div>  
+        
+        <div class="topCanciones">
+           <a href="detalle_tracks.html?id=${cancion.id}">${cancion.title} </a>
+        </div>
+    
          `
         
+      
+
+
     }
     })
     .catch(function(error){

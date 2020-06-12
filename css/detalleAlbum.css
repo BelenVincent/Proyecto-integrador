@@ -24,6 +24,10 @@ footer{
     color: black;
 }
 
+.titulo-album{
+    margin-top: 50px;
+}
+
 .contenedor{
     width: 1024px;
     margin: 0 auto;
@@ -117,7 +121,7 @@ header ul li a{
 
 .detalleAlbum{
     display: grid;
-    gap: 30px;
+    gap: 10px;
     display: grid;
     font-family: 'Girassol', cursive;
     text-align: center;

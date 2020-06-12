@@ -1,20 +1,37 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+
 header{
     background-color: rgb(99, 19, 19);
     width: 100%;
-    height: 120px;
+    height: 170px;
     font-size: larger;
     z-index: 10;
-    font-family: 'Overpass', sans-serif;
-    position: fixed;
-    top: 0;
+    font-family: 'Overpass', sans-serif; 
+    padding-top: 10px;
 }
 
+
+
 .v-music{
+    width: 100px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-left: 630px;
     transition: ease-in-out 0.3s;
+    align-self: flex-end;
 }
 
 .v-music:hover{
     transform: scale(1.2);
+}
+
+.color{
+    color: black;
 }
 
 footer{
@@ -28,23 +45,45 @@ footer{
     margin-top: 100px;
 }
 
+.titulo-genero{
+    color: black;
+    margin-top: 50px;
+}
 
+.artista-name{
+    display: grid;
+    gap: 70px;
+    padding: 10px;
+    display: grid;
+    font-family: 'Girassol', cursive;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 .contenedor{
+    display: grid;
+    gap: 30px;
+    display: grid;
+    font-family: 'Girassol', cursive;
+    text-align: center;
+    margin-bottom: 10px;
     width: 1024px;
     margin: 0 auto;
 }
 
+.imagen-genero{
+    margin: auto;
+}
+
 .forms{
-    margin-right: 100px;
+    
     margin-top: 50px;
-    width: 500px;
+    width: 400px;
+    margin-left: 50px;
     
 }
 
-.carousel-slide{
-    margin-left: 50px;
-}
+
 
 .tracks{
     margin-top: 100px;
@@ -53,7 +92,6 @@ footer{
 li{
     list-style-type: none;
 }
-
 
 
 .menu2 {
@@ -67,19 +105,16 @@ header ul{
 }
 
 header ul li a{
-    
-    padding: 40px;
+    display: inline-block;
+    padding: 30px;
     font-size: larger;
     font-family: 'Overpass', sans-serif;
     column-gap: 30px;
-    margin-left: 175px;
+    margin-left: 200px;
     color: black;
     text-transform: uppercase;
-    text-decoration: black;
     
 }
-
-
 
 
 
@@ -137,43 +172,25 @@ header ul li a{
 }
 
 #products_generos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.generoscontenedor{
-    margin: 30px;
-    max-width: 115px;
-    transition: ease-in-out 0.3s;
-  
-}
-
-.generoscontenedor:hover{
-    transform: scale(1.3);
-}
-
-.generoscontenedor .color{
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    width: 100px;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    font-family: 'Girassol', cursive;
     text-align: center;
+    margin-bottom: 10px;
+   
 }
-
-
-.color{
-    color: black;
-    text-decoration: none;
-    
-    
-}
-
 #tracks{
     display: grid;
     gap: 50px;
     padding: 10px;
     color: white;
     font-family: 'Girassol', cursive;
-    
-    grid-template-columns:  1fr 1fr 1fr
-   
+    grid-template-columns:  1fr 1fr ;
+    margin-left: 100px;
 }
 
 
@@ -187,24 +204,18 @@ body{
 h2{
     color: black;
     text-align: center;
-  font-size: 250%;
-  margin-top: 150px;
- background-color:  rgba(230, 213, 213, 0.4);
+   font-size: xx-large;
+   background-color:rgba(237, 236, 238, 0.5) ;
+  
 
 }
 
-.v-music{
-    width: 100px;
-    border-radius: 100px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-
+.titulotrack{
+    color: black;
+    margin-top: 50px;
 }
+
+
 
 .playlists img{
     height: 100%;

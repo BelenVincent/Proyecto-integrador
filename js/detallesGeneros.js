@@ -40,8 +40,12 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/' + Gene
        for (const artista of artistas) {
            contenedorartistas.innerHTML+=`
            <div>
-         ${artista.name}
-           </div> 
+        <div class="artista-name">
+            
+           <a href="detallesArtista.html?id=${artista.id}">${artista.name} </a>
+        </div>
+   </div>
+           
            `
        }
         

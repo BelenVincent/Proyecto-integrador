@@ -21,17 +21,41 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackI
         let imagen = document.querySelector('.imagen-track');
         imagen.src = datos.album.cover_medium;
 
-        let nombreTrack = document.querySelector('.nombre-track');
-        nombreTrack.innerHTML = `<a href="detallesArtista.html?=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>`
 
         let duracionCancion = document.querySelector('.duracion')
         duracionCancion.innerHTML= datos.duration;
 
         let nombreAlbum = document.querySelector ('.nombre-album');
-        nombreAlbum.innerHTML = datos.album.title;
+        nombreAlbum.innerHTML = `<a href="detalleAlbum.html?id=${datos.album.id}"><h3>${datos.album.title}</h3></a>`
        let nombreArtista = document.querySelector ('.nombre-artista');
        nombreArtista.innerHTML = `<a href="detallesArtista.html?id=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>`
+   
+    
+      let boton = document.querySelector ('#me-gusta');
+
+      boton.onclick = function (){
+       //me traigo las canciones de localStorage
+       let cancionesEnLocal = window.localStorage.getItem ('meGustan');
+       //transformar a js ese string que esta en localStorage
+       let cancionesArrayEnLocal = JSON.parse(cancionesEnLocal);
+
+       //tengo que validar que no tenga nada, y si es asi creo un array desde cero
+       if (!cancionesArrayEnLocal){
+        cancionesArrayEnLocal = []
+       }
+
+      //ahora le guardo la nueva cancion
+       cancionesArrayEnLocal.push(data);
+      
+       window.localStorage.setItem('meGustan', JSON.stringify(cancionesArrayEnLocal));
+
+      }
+
+
+
     })
     .catch(function(error){
         console.error(error);
     })
+
+    
