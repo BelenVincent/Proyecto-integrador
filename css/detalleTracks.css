@@ -13,6 +13,10 @@ header{
     color: black;
 }
 
+.v-music:hover{
+    transform: scale(1.2);
+}
+
 .detalleTracks{
     display: grid;
     gap: 30px;
@@ -70,50 +74,7 @@ footer{
 li{
     list-style-type: none;
 }
-/* Modal */
-.modal{
-    z-index: 3;
-    display: none;
-    padding-top: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-.modal-content{
-    margin:  auto;
-    background-color:white;
-    position: relative;
-    padding: 0;
-    outline: 0;
-    width: 800px;
-    height: 600px;
-}
 
-.modal-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.modal-title {
-    font-size:48px;
-}
-.modal-desc {
-    font-size:22px;
-}
 
 
 

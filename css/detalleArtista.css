@@ -13,6 +13,10 @@ header{
     color: black;
 }
 
+.v-music:hover{
+    transform: scale(1.2);
+}
+
 .detalleArtista{
     display: grid;
     gap: 30px;
@@ -21,6 +25,14 @@ header{
     text-align: center;
     margin-bottom: 10px;
 
+}
+
+.numeros{
+    margin-top: 50px;
+}
+
+.topCanciones{
+    margin-left: 600px;
 }
 
 .imagen-artista{

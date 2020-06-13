@@ -1,12 +1,49 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+
 header{
     background-color: rgb(99, 19, 19);
     width: 100%;
     height: 170px;
     font-size: larger;
     z-index: 10;
-    font-family: 'Overpass', sans-serif;
-  
+    font-family: 'Overpass', sans-serif; 
+    padding-top: 10px;
+}
+
+.v-music:hover{
+    transform: scale(1.2);
+}
+
+.resultados{
+    height: 100%;
     
+    gap: 50px;
+    padding: 20px;
+
+}
+
+
+
+.v-music{
+    width: 100px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-left: 15px;
+    transition: ease-in-out 0.3s;
+    align-self: flex-end;
+}
+
+.v-music:hover{
+    transform: scale(1.2);
+}
+
+.color{
+    color: black;
 }
 
 footer{
@@ -20,16 +57,8 @@ footer{
     margin-top: 100px;
 }
 
-.h4{
+.titulo-genero{
     color: black;
-}
-
-.v-music:hover{
-    transform: scale(1.2);
-}
-
-.titulo-album{
-    margin-top: 50px;
 }
 
 .contenedor{
@@ -38,11 +67,14 @@ footer{
 }
 
 .forms{
-    margin-right: 100px;
+    
     margin-top: 50px;
-    width: 500px;
+    width: 400px;
+    margin-left: 50px;
     
 }
+
+
 
 .tracks{
     margin-top: 100px;
@@ -51,52 +83,6 @@ footer{
 li{
     list-style-type: none;
 }
-
-/* Modal */
-.modal{
-    z-index: 3;
-    display: none;
-    padding-top: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-.modal-content{
-    margin:  auto;
-    background-color:white;
-    position: relative;
-    padding: 0;
-    outline: 0;
-    width: 800px;
-    height: 600px;
-}
-
-.modal-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.modal-title {
-    font-size:48px;
-}
-.modal-desc {
-    font-size:22px;
-}
-
 
 
 .menu2 {
@@ -110,12 +96,12 @@ header ul{
 }
 
 header ul li a{
-    
-    padding: 40px;
+    display: inline-block;
+    padding: 30px;
     font-size: larger;
     font-family: 'Overpass', sans-serif;
     column-gap: 30px;
-    margin-left: 180px;
+    margin-left: 200px;
     color: black;
     text-transform: uppercase;
     
@@ -125,17 +111,15 @@ header ul li a{
 
 .detalleAlbum{
     display: grid;
-    gap: 10px;
+    gap: 70px;
+    padding: 100px;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr   ;
+    
     font-family: 'Girassol', cursive;
     text-align: center;
     margin-bottom: 10px;
 
-}
-
-.imagen-album{
-    margin: 0 auto;
-   display: block;
 }
   
 
@@ -196,9 +180,8 @@ header ul li a{
     padding: 10px;
     color: white;
     font-family: 'Girassol', cursive;
-    
-    grid-template-columns:  1fr 1fr 1fr
-   
+    grid-template-columns:  1fr 1fr ;
+    margin-left: 100px;
 }
 
 
@@ -211,25 +194,19 @@ body{
 
 h2{
     color: black;
- 
-}
-
-.b{
-
-}
-
-.v-music{
-    width: 100px;
-    border-radius: 100px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    text-align: center;
+   font-size: xx-large;
+   background-color:rgba(237, 236, 238, 0.5) ;
+  
 
 }
+
+.titulotrack{
+    color: black;
+    margin-top: 50px;
+}
+
+
 
 .playlists img{
     height: 100%;

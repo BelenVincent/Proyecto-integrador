@@ -13,7 +13,15 @@ header{
     padding-top: 10px;
 }
 
+
+
 .v-music{
+    width: 100px;
+    border-radius: 100px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    margin-left: 15px;
     transition: ease-in-out 0.3s;
     align-self: flex-end;
 }
@@ -47,15 +55,14 @@ footer{
 }
 
 .forms{
-    margin-right: 100px;
+    
     margin-top: 50px;
-    width: 500px;
+    width: 400px;
+    margin-left: 50px;
     
 }
 
-.carousel-slide{
-    margin-left: 50px;
-}
+
 
 .tracks{
     margin-top: 100px;
@@ -64,6 +71,7 @@ footer{
 li{
     list-style-type: none;
 }
+<<<<<<< HEAD
 /* Modal */
 .modal{
     z-index: 3;
@@ -109,6 +117,8 @@ li{
     font-size:22px;
 }
 
+=======
+>>>>>>> 22300741c5fa2c9b352f9598952c578b0ab98cab
 
 
 .menu2 {
@@ -123,11 +133,11 @@ header ul{
 
 header ul li a{
     display: inline-block;
-    padding: 40px;
+    padding: 30px;
     font-size: larger;
     font-family: 'Overpass', sans-serif;
     column-gap: 30px;
-    margin-left: 180px;
+    margin-left: 200px;
     color: black;
     text-transform: uppercase;
     
@@ -206,7 +216,8 @@ header ul li a{
     padding: 10px;
     color: white;
     font-family: 'Girassol', cursive;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr ;
+    margin-left: 100px;
 }
 
 
@@ -231,6 +242,7 @@ h2{
     margin-top: 50px;
 }
 
+<<<<<<< HEAD
 .v-music{
     width: 100px;
     border-radius: 100px;
@@ -239,6 +251,9 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
+=======
+
+>>>>>>> 22300741c5fa2c9b352f9598952c578b0ab98cab
 
 .playlists img{
     height: 100%;
