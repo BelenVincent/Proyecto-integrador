@@ -50,14 +50,14 @@ footer{
 }
 
 .contenedor{
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
 .forms{
     
     margin-top: 50px;
-    width: 400px;
+    min-width: 360px;
     margin-left: 50px;
     
 }
@@ -71,7 +71,7 @@ footer{
 li{
     list-style-type: none;
 }
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 /* Modal */
 .modal{
     z-index: 3;
@@ -117,8 +117,8 @@ li{
     font-size:22px;
 }
 
-=======
->>>>>>> 22300741c5fa2c9b352f9598952c578b0ab98cab
+/* ======= */
+/* >>>>>>> 22300741c5fa2c9b352f9598952c578b0ab98cab */
 
 
 .menu2 {
@@ -129,20 +129,26 @@ header ul{
     list-style-type: none;
     display: flex;
     font-family: 'Overpass', sans-serif;
+    justify-content: center;
+    padding: 0;
 }
 
 header ul li a{
     display: inline-block;
-    padding: 30px;
     font-size: larger;
     font-family: 'Overpass', sans-serif;
-    column-gap: 30px;
-    margin-left: 200px;
     color: black;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 
+header ul li{
+    margin-right: 20px;
+}
+
+header ul li:last-of-type{
+    
+    margin-right: 0;
+}
 
 
 .detalleAlbum{
@@ -242,7 +248,7 @@ h2{
     margin-top: 50px;
 }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 .v-music{
     width: 100px;
     border-radius: 100px;
@@ -251,9 +257,9 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
-=======
+/* ======= */
 
->>>>>>> 22300741c5fa2c9b352f9598952c578b0ab98cab
+/* >>>>>>> 22300741c5fa2c9b352f9598952c578b0ab98cab */
 
 .playlists img{
     height: 100%;

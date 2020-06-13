@@ -2,6 +2,11 @@ fetch (' https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
 .then (function(respuesta){
   return respuesta.json();
 })
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
+
 .then (function(datos){
     //trabajo con los datos
     let albums = datos.albums.data;
