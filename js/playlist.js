@@ -1,9 +1,18 @@
-window.addEventListener('load', function (){
+window.onload = function(){
+
+
 
 //obtengo las canciones que quiero
-let canciones = JSON.parse(window.localStorage.getItem('meGustan'))
+let canciones = JSON.parse(window.localStorage.getItem('cancion'));
+let cancionesArray = document.querySelector ('.cancionindividual')
+
+for (const cancion of canciones) {
+    console.log(cancion)
+    cancionesArray.innerHTML
+}
 
 }
 
 
-)
+
+
