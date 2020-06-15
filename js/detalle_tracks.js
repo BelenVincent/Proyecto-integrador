@@ -15,6 +15,10 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackI
 
        console.log (datos)
 
+    let playlist=[datos]
+
+
+
         let titulo = document.querySelector('.titulo-track');
         titulo.innerHTML = datos.title;
 
@@ -35,20 +39,20 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackI
 
       boton.onclick = function (){
        //me traigo las canciones de localStorage
-       let cancionesEnLocal = window.localStorage.getItem ('cancion');
-       //transformar a js ese string que esta en localStorage
-       let cancionesArrayEnLocal = JSON.parse(cancionesEnLocal);
-
-       //tengo que validar que no tenga nada, y si es asi creo un array desde cero
-       if (!cancionesArrayEnLocal){
-        cancionesArrayEnLocal = []
+       if (window.localStorage.getItem("playlist")===null) {
+           window.localStorage.setItem("playlist",JSON.stringify(datos))
+       } else { 
+          
+        let arrayplaylist=JSON.parse(window.localStorage.getItem("playlist"))
+        arrayplaylist.push(datos)
+        window.localStorage.setItem("playlist",JSON.stringify(arrayplaylist))
+        console.log(arrayplaylist)
+           
        }
-
-      //ahora le guardo la nueva cancion
-       cancionesArrayEnLocal.push(data);
       
-       window.localStorage.setItem('cancion', JSON.stringify(cancionesArrayEnLocal));
-
+       
+      
+       
       }
 
 
