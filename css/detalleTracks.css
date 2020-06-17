@@ -1,12 +1,62 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+
 header{
-    background-color: rgb(99, 19, 19);
+    background-color: rgba(130, 39, 172, 0.849);
     width: 100%;
     height: 170px;
     font-size: larger;
     z-index: 10;
-    font-family: 'Overpass', sans-serif;
-  
-    
+    font-family: 'Overpass', sans-serif; 
+    padding-top: 10px;
+}
+
+/* Modal */
+.modal{
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(152, 167, 155, 0.4);
+}
+.modal-content{
+    margin:  auto;
+    background-color:white;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 800px;
+    height: 600px;
+}
+
+.modal-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.modal-title {
+    font-size:48px;
+}
+.modal-desc {
+    font-size:22px;
 }
 
 .color{
@@ -67,8 +117,6 @@ footer{
 
 .tracks{
     margin-top: 100px;
-   
-    
 }
 
 li{
@@ -199,11 +247,10 @@ h2{
     margin-top: 50px;
 }
 
+
 .v-music{
     width: 100px;
     border-radius: 100px;
-    border-style: solid;
-    border-color: black;
     margin-left: 10px;
     display: block;
     margin-left: auto;

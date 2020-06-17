@@ -21,62 +21,59 @@
 
       <div class="head">
 
-               <a href="home.html"><img class="v-music" src="img/LogoVerde.png" alt="v-music"></a>
+               <a href="home.html"><img class="v-music" src="img/LogoVioleta.png" alt="v-music"></a>
+
+               <nav class="main-nav">
+                <ul>
+                    <li><a href="generos.html">Géneros</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                </ul>
+              </nav>
 
                <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-Iniciar Sesión</button>
+        <button type="button" class="btn btn-primary btn-iniciar-sesion" data-toggle="modal" data-target="#exampleModalCenter">
+        Iniciar Sesión</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesión</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="">
-          <input style="display: block; margin: auto; margin-bottom: 7px;"
-          type="text" placeholder="Usuario">
-          <input type="password" placeholder="Contraseña">
-        </form>
-        <button type="button" class="btn btn-primary">Iniciar</button>
-        <a href="registrar.html">¿No tienes Usuario? ¡Crea uno!</a>
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hacer un usuario</button>
-        <button type="button" class="btn btn-primary">Iniciar</button>
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-
-
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <input style="display: block; margin: auto; margin-bottom: 7px;"
+                  type="text" placeholder="Usuario">
+                  <input type="password" placeholder="Contraseña">
+                </form>
+                <button type="button" class="btn btn-primary">Iniciar</button>
+                <a href="registrar.html">¿No tienes Usuario? ¡Crea uno!</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hacer un usuario</button>
+                <button type="button" class="btn btn-primary">Iniciar</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="header-container">
-          <nav class="main-nav">
-            <ul>
-                <li><a href="generos.html">Géneros</a></li>
-                <li><a href="playlist.html">Playlist</a></li>
-            </ul>
-        </nav>
-        <form action="resultados.html" method="GET" class="forms">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text"><i class="fas fa-search"></i></div>
+          <form action="resultados.html" method="GET" class="forms">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-search"></i></div>
+              </div>
+              <input type="text" class="form-control" placeholder="Buscar" name="busqueda">           
+              <button type="submit">Buscar</button>
             </div>
-            <input type="text" class="form-control" placeholder="Buscar" name="busqueda">
-            
-            <button type="submit">Buscar</button>
-          </div>
-        </form>
+          </form>
         </div>
+      </div>
+
     </header>
 
 
