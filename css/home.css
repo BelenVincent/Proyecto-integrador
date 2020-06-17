@@ -15,14 +15,6 @@ header{
 
 
 
-.v-music{
-    width: 100px;
-    border-radius: 100px;
-    display: block;
-    margin-left: 15px;
-    transition: ease-in-out 0.3s;
-    align-self: flex-end;
-}
 
 .v-music:hover{
     transform: scale(1.2);
@@ -32,11 +24,7 @@ header{
     z-index: 0;
 }
 
-.btn-iniciar-sesion{
-    height: 50p;
-    margin: auto 0;
-    align-self: right;
-}
+
 
 .color{
     color: black;
@@ -65,9 +53,8 @@ footer{
 .forms{
     
     margin-top: 50px;
-    min-width: 200px;
+    width: 400px;
     margin-left: 50px;
-    margin-right: 100px;
     
 }
 
@@ -143,24 +130,41 @@ header ul{
 }
 
 header ul li a{
+    padding: 40px;
     display: inline-block;
     font-size: larger;
     font-family: 'Overpass', sans-serif;
     color: black;
     text-transform: uppercase;    
-    margin-right: 150px;
-    margin-top: 30px;
+ 
+    margin-right: 200px;
+   margin-left: 5px;
+    margin-top: 80px;
 }
 
-header ul li{
-    margin-right: 20px;
-
-}
-
-header ul li:last-of-type{
+.v-music{
+    width: 100px;
+    border-radius: 100px;
+    margin-left: 570px;
+    display: block;
     
-    margin-right: 0;
+    margin-top: 10px;
+    transition: ease-in-out 0.3s;
+    align-self: flex-end;
+    margin-right: 50px;
 }
+
+
+
+.btn-iniciar-sesion{
+    height: 50p;
+    margin: auto 0;
+    align-self: right;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+
 
 
 .detalleAlbum{
@@ -261,14 +265,7 @@ h2{
 }
 
 /* <<<<<<< HEAD */
-.v-music{
-    width: 100px;
-    border-radius: 100px;
-    margin-left: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 /* ======= */
 
 /* >>>>>>> 22300741c5fa2c9b352f9598952c578b0ab98cab */

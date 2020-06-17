@@ -74,6 +74,7 @@ header{
     font-family: 'Girassol', cursive;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 50px;
    
 
 }
@@ -138,14 +139,26 @@ header ul{
 
 header ul li a{
     display: inline-block;
-    padding: 40px;
+    padding: 5px;
     font-size: larger;
     font-family: 'Overpass', sans-serif;
     column-gap: 30px;
-    margin-left: 180px;
+    margin-left: 580px;
     color: black;
     text-transform: uppercase;
     
+}
+
+
+.v-music{
+    width: 100px;
+    border-radius: 100px;
+    margin-left: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
 }
 
 
@@ -248,16 +261,6 @@ h2{
 }
 
 
-.v-music{
-    width: 100px;
-    border-radius: 100px;
-    margin-left: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-
-}
 
 .playlists img{
     height: 100%;
