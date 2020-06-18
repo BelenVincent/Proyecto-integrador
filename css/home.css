@@ -13,8 +13,9 @@ header{
     padding-top: 10px;
 }
 
-
-
+.v-music{
+    transition: ease-in-out 0.3s;
+}
 
 .v-music:hover{
     transform: scale(1.2);
@@ -23,8 +24,6 @@ header{
 .modal-backdrop {
     z-index: 0;
 }
-
-
 
 .color{
     color: black;
@@ -176,6 +175,13 @@ header ul li a {
     background-color: #d39e00de;
     border-color: #d39e00c4;
 }
+
+a {
+    color: #0077ff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .detalleAlbum{
     display: grid;
     gap: 70px;
@@ -187,9 +193,6 @@ header ul li a {
     margin-bottom: 10px;
 }
   
-
-
-
 .products{
     display: grid;
     gap: 70px;
