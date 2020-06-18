@@ -6,10 +6,10 @@
 header{
     background-color: rgba(130, 39, 172, 0.849);
     width: 100%;
-    height: 170px;
-    font-size: larger;
+    height: 90px;
+    font-size: inherit;
     z-index: 10;
-    font-family: 'Overpass', sans-serif; 
+    font-family: unset; 
     padding-top: 10px;
 }
 
@@ -72,7 +72,6 @@ li{
 .modal{
     z-index: 3;
     display: none;
-    padding-top: 100px;
     position: fixed;
     left: 0;
     top: 0;
@@ -89,7 +88,7 @@ li{
     padding: 0;
     outline: 0;
     width: 800px;
-    height: 600px;
+    height: 400px;
 }
 
 .modal-button {
@@ -104,6 +103,7 @@ li{
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+
 }
 
 .modal-title {
@@ -124,31 +124,31 @@ li{
 header ul{
     list-style-type: none;
     display: flex;
-    font-family: 'Overpass', sans-serif;
+    font-family: initial;
     justify-content: center;
     padding: 0;
 }
 
-header ul li a{
-    padding: 40px;
-    display: inline-block;
+header ul li a {
+    padding: 0px;
+    display: block;
     font-size: larger;
-    font-family: 'Overpass', sans-serif;
+    font-family: initial;
     color: black;
-    text-transform: uppercase;    
- 
+    text-transform: uppercase;
     margin-right: 200px;
-   margin-left: 5px;
-    margin-top: 80px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .v-music{
-    width: 100px;
+    width: 65px;
     border-radius: 100px;
-    margin-left: 570px;
+    margin-left: 30px;
     display: block;
     
-    margin-top: 10px;
+    margin-top: 3px;
     transition: ease-in-out 0.3s;
     align-self: flex-end;
     margin-right: 50px;
@@ -157,16 +157,25 @@ header ul li a{
 
 
 .btn-iniciar-sesion{
-    height: 50p;
+    height: 40px;
     margin: auto 0;
-    align-self: right;
-    margin-right: 5px;
-    margin-top: 0px;
+    align-self: auto;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-left: auto;
 }
 
+.btn-primary {
+    color: #1d2124;
+    background-color: #d39e006b;
+    border-color: #d39e0040;
+}
 
-
-
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d39e00de;
+    border-color: #d39e00c4;
+}
 .detalleAlbum{
     display: grid;
     gap: 70px;
@@ -174,10 +183,8 @@ header ul li a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr   ;
     
-    font-family: 'Girassol', cursive;
-    text-align: center;
+    font-family: 'PT Serif', serif;    text-align: center;
     margin-bottom: 10px;
-
 }
   
 
@@ -190,10 +197,8 @@ header ul li a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr   ;
     color: white;
-    font-family: 'Girassol', cursive;
-    text-align: center;
+    font-family: 'PT Serif', serif;    text-align: center;
     margin-bottom: 10px;
-
 }
 
 
@@ -227,8 +232,7 @@ header ul li a{
     width: 100px;
     grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     color: white;
-    font-family: 'Girassol', cursive;
-    text-align: center;
+    font-family: 'PT Serif', serif;    text-align: center;
     margin-bottom: 10px;
    
 }
@@ -237,8 +241,7 @@ header ul li a{
     gap: 50px;
     padding: 10px;
     color: white;
-    font-family: 'Girassol', cursive;
-    grid-template-columns:  1fr 1fr ;
+    font-family: 'PT Serif', serif;    grid-template-columns:  1fr 1fr ;
     margin-left: 100px;
 }
 
@@ -247,16 +250,19 @@ header ul li a{
 
 body{
     background-image: url(../img/imagengris.jpg);
-    background-color: rgb(19, 189, 44);
+    background-color: rgb(0, 0, 0);
+    background-blend-mode: color-burn;
 }
 
 h2{
     color: black;
     text-align: center;
    font-size: xx-large;
-   background-color:rgb(217, 230, 220) ;
-  
+   background-color:rgb(217, 230, 220);
+}
 
+#h2{
+    font-family: 'PT Serif', serif;
 }
 
 .titulotrack{
@@ -310,7 +316,7 @@ p{
 
 
 #carouselExampleControls{
-    width: 750px;
+    width: 1440px;
     height: 75px;
     text-align: center;
 }
