@@ -1,31 +1,5 @@
-header{
-    background-color: rgba(130, 39, 172, 0.849);
-    width: 100%;
-    height: 170px;
-    font-size: larger;
-    z-index: 10;
-    font-family: 'Overpass', sans-serif;
-  
-    
-}
-
-footer{
-    background-color: black;
-    width: 100%;
-    height: 200px;
-    font-size: larger;
-    bottom: 2px;
-    z-index: 10;
-    font-family: 'Overpass', sans-serif;
-    margin-top: 100px;
-}
-
 .h4{
     color: black;
-}
-
-.v-music:hover{
-    transform: scale(1.2);
 }
 
 .titulo-album{
@@ -52,76 +26,9 @@ li{
     list-style-type: none;
 }
 
-/* Modal */
-.modal{
-    z-index: 3;
-    display: none;
-    padding-top: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-}
-.modal-content{
-    margin:  auto;
-    background-color:white;
-    position: relative;
-    padding: 0;
-    outline: 0;
-    width: 800px;
-    height: 600px;
-}
-
-.modal-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.modal-title {
-    font-size:48px;
-}
-.modal-desc {
-    font-size:22px;
-}
-
-
-
 .menu2 {
     text-align: right;
 }
-
-header ul{
-    list-style-type: none;
-    display: flex;
-    font-family: 'Overpass', sans-serif;
-}
-
-header ul li a{
-    
-    padding: 40px;
-    font-size: larger;
-    font-family: 'Overpass', sans-serif;
-    column-gap: 30px;
-    margin-left: 535px;
-    color: black;
-    text-transform: uppercase;
-    
-}
-
-
 
 .detalleAlbum{
     display: grid;
@@ -130,16 +37,14 @@ header ul li a{
     font-family: 'Girassol', cursive;
     text-align: center;
     margin-bottom: 10px;
-
+    color: white;
+    margin-top: 100px;
 }
 
 .imagen-album{
     margin: 0 auto;
    display: block;
 }
-  
-
-
 
 .products{
     display: grid;
@@ -202,20 +107,8 @@ header ul li a{
 }
 
 
-
-
-body{
-    background-image: url(../img/imagengris.jpg);
-    background-size: contain;
-}
-
 h2{
     color: black;
- 
-}
-
-.b{
-
 }
 
 .v-music{

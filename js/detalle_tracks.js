@@ -37,14 +37,14 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackI
     
       let boton = document.querySelector ('#me-gusta');
 
-      boton.onclick = function (){
+      boton.onClick = function (){
        //me traigo las canciones de localStorage
        if (window.localStorage.getItem("playlist")===null) {
            window.localStorage.setItem("playlist",JSON.stringify(datos))
        } else { 
           
-        let arrayplaylist=JSON.parse(window.localStorage.getItem("playlist"))
-        arrayplaylist.push(datos)
+        let arrayplaylist = JSON.parse(window.localStorage.getItem("playlist"))
+        arrayplaylist.push(datos);
         window.localStorage.setItem("playlist",JSON.stringify(arrayplaylist))
         console.log(arrayplaylist)
            

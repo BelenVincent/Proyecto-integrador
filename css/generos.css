@@ -42,7 +42,7 @@ footer{
 }
 
 .forms{
-    margin-right: 100px;
+    margin: auto;
     margin-top: 50px;
     width: 500px;
     
@@ -139,6 +139,10 @@ header ul li a{
     padding: 50px;
 }
 
+#h2 {
+    margin-top: 150px;
+}
+
 #products_generos{
     display: flex;
     flex-wrap: wrap;
@@ -226,12 +230,6 @@ header ul li a{
 
 /* ======= */
 
-
-body{
-    background-image: url(../img/imagengris.jpg);
-    background-size: contain;
-}
-
 h2{
     color: black;
     text-align: center;
@@ -239,14 +237,6 @@ h2{
   margin-top: 50px;
  background-color:  rgba(230, 213, 213, 0.4);
 
-}
-
-.forms{
-    
-    margin-top: 50px;
-    width: 400px;
-    margin-left: 50px;
-    
 }
 
 .v-music {

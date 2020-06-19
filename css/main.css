@@ -1,0 +1,207 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: rgba(130, 39, 172, 0.85);
+    width: 100%;
+    height: 90px;
+    font-size: inherit;
+    z-index: 10;
+    font-family: unset; 
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+}
+
+.v-music{
+    transition: ease-in-out 0.3s;
+}
+
+.v-music:hover{
+    transform: scale(1.2);
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+
+/* Modal */
+.modal{
+    z-index: 3;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(152, 167, 155, 0.4);
+}
+.modal-content{
+    margin:  auto;
+    background-color:white;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 800px;
+    height: 400px;
+}
+
+.modal-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+
+.modal-title {
+    font-size:48px;
+}
+.modal-desc {
+    font-size:22px;
+}
+
+/* ======= */
+
+/* <<<<<<< HEAD */
+
+.menu2 {
+    text-align: right;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    font-family: initial;
+    justify-content: center;
+    padding: 0;
+}
+
+header ul li a {
+    padding: 0px;
+    display: block;
+    font-size: larger;
+    font-family: initial;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.v-music{
+    width: 65px;
+    border-radius: 100px;
+    margin-left: 30px;
+    display: block;
+    
+    margin-top: 3px;
+    transition: ease-in-out 0.3s;
+    align-self: flex-end;
+    margin-right: 50px;
+}
+
+
+
+.btn-iniciar-sesion{
+    height: 40px;
+    margin: auto 0;
+    align-self: auto;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-left: auto;
+    color: #1d2124;
+    background-color: #d39e006b;
+    border-color: #d39e0040;
+}
+
+.btn-iniciar-sesion:hover {
+    color: #fff;
+    background-color: #d39e00de;
+    border-color: #d39e00c4;
+}
+
+/* .forms{
+    margin-top: 50px;
+    width: 400px;
+    margin-left: 50px;
+} */
+
+.color{
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+footer{
+    background-color:#6f2292bb;
+    width: 100%;
+    height: 200px;
+    font-size: larger;
+    bottom: 2px;
+    z-index: 10;
+    font-family: 'Overpass', sans-serif;
+    margin-top: 100px;
+}
+
+@media (max-width: 425px) {
+    header {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    header .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn-iniciar-sesion {
+        margin: auto;
+    }
+
+    img.v-music {
+        margin: auto;
+    }
+
+    .main-nav a {
+        margin: auto;
+    }
+
+    #home {
+        display: none;
+    }
+
+    .header-container {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .forms {
+        width: 100%!important;
+        padding: 0 20px;
+    }
+
+    .modal-content{
+        margin:  auto;
+        background-color:white;
+        width: 300px;
+        height: 400px;
+        position: fixed;
+        top: 0;
+        margin-top: 50px;
+    }
+}
