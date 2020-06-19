@@ -20,9 +20,7 @@ fetch (' https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/')
     })
    })
  
-   //${dataGeneros.picture_medium}
-   //${dataGeneros.name} 
- 
+
 
  .catch(function(error){
     console.error(error);
